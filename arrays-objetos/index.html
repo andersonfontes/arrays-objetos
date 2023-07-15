@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="objetos.js"></script>
+    <!-- <script src="leitorjson.js"></script> -->
+</head>
+
+<body>
+    <div id="output">
+        <div class="div">
+            <table class="tabela" id="tabela">
+                <tr>
+                    <th>ID</th>
+                    <th>PRODUTO</th>
+                    <th>PREÇO</th>
+                </tr>
+            </table>
+        </div>
+        <div class="div">
+            <form action="">
+                <h2>Cadastro de Produto</h2>
+                <input type="number" placeholder="Digite uma ID única" id="id" name="id">
+                <input type="text" placeholder="Digite o nome do produto" id="nome" name="nome">
+                <input type="number" placeholder="Digite o preço" id="preco" nome" name="preco">
+                <input type="button" value="Cadastrar Produto" id="btn-inserir" name="btn-inserir"
+                    onclick="cadastrar()">
+            </form>
+        </div>
+    </div>
+
+
+
+    <script>
+        // produtos.forEach((produto) => {
+        //     for (let propriedade in produto) {  
+        //         // antigo log  
+        //         let div =             
+        //         document.querySelector('#output').innerHTML += propriedade + " " + produto [propriedade] + '<br>';
+        //         console.log(propriedade + " " + produto[propriedade]);
+        //     }            
+        // })
+
+        const tabela = document.querySelector('#tabela');
+        getprodutos();
+
+        function getprodutos() {
+            produtos.forEach((produto) => {
+
+                tabela.innerHTML += `<tr id="a${produto.id}">`;
+
+                for (let propriedade in produto) {
+                    document.querySelector("#" + 'a' + produto.id).innerHTML += `<td> ${produto[propriedade]} </td>`;
+                }
+
+                tabela.innerHTML += "</tr>";
+            });
+        }
+
+        function cadastrar() {
+            //PASSO 1: pegando as informações que o usuario digitou e colocando em variaveis
+            const idInsere = document.querySelector('#id').value;
+            const nomeInsere = document.querySelector('#nome').value;
+            const precoInsere = document.querySelector('#preco').value;
+
+            //PASSO 2: criando um objeto produto 
+            let produto = {
+                id : idInsere,
+                nome : nomeInsere,
+                preco : precoInsere
+            }
+
+            //PASSO 3: inserindo o objeto PRODUTO no vetor PRODUTOS
+            produtos.push(produto);
+            
+            //PASSO4: inserindo os elementos na tabela com INNERHTML
+            tabela.innerHTML += `<tr id="a${produto.id}">`;
+            document.querySelector("#" + 'a' + produto.id).innerHTML += `<td> ${produto.id} </td>`;
+            document.querySelector("#" + 'a' + produto.id).innerHTML += `<td> ${produto.nome} </td>`;
+            document.querySelector("#" + 'a' + produto.id).innerHTML += `<td> ${produto.preco} </td>`;
+            tabela.innerHTML += "</tr>";
+
+            //PASSO4: inserindo os elementos na tabela com APPENDCHILDS
+            // let tr = document.createElement('tr');
+            // tr.setAttribute('id', `a${produto.id}`);
+
+            // let td1 = document.createElement('td');
+            // let td2 = document.createElement('td');
+            // let td3 = document.createElement('td');              
+           
+            // td1.innerHTML=produto.id;
+            // td2.innerHTML=produto.nome;
+            // td3.innerHTML=produto.preco;
+
+            // tr.appendChild(td1);
+            // tr.appendChild(td2);
+            // tr.appendChild(td3);          
+
+            // tabela.appendChild(tr);         
+        }
+      
+    </script>
+</body>
+
+</html>

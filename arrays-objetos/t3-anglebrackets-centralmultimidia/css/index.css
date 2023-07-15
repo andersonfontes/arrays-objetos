@@ -1,0 +1,94 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Hanuman', serif;
+}
+
+.bg_video {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+	width: auto;
+	height: auto;
+	z-index: -1000;
+	background: url(../img/ford-logo-wallpaper-1440x900.jpg) no-repeat;
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#menu {
+	width: 90%;
+	margin-top: 72vh;
+	margin-bottom: 0;
+}
+
+/* .fadeIn {
+	animation-name: fadeIn;
+	transition-property: width;
+	animation-fill-mode: forwards;
+	transition-duration: 3s;
+	transition-delay: 2s;
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+} */
+
+#menu ul {
+	list-style: none;
+	display: flex;
+	justify-content: space-between;
+	justify-items: center;
+	align-items: center;
+	margin: 4vh;
+}
+
+#menu ul a {
+	text-decoration: none;
+	color: #dcdcdc;
+	height: 16vh;
+	width: 10vw;
+}
+
+#menu li {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	font-size: 22px;
+	font-weight: 300;
+}
+
+iconify-icon {
+	font-size: 13vh;
+	margin-bottom: 2.5vh;
+}
+
+#cbordo,
+#folder-media {
+	color: #133C7D;
+}
+
+.toqueTagA li {
+	color: #F3F7EE;
+}
+
+.toqueTagA:active {
+	box-shadow: rgba(50, 50, 93, 0.418) 0px 30px 60px -12px inset, rgba(44, 44, 44, 0.3) 0px 18px 36px -18px inset;
+	border-radius: 10px;
+	transition: ease-in-out 0.6s;
+	transform: scale(0.8, 0.8);
+}

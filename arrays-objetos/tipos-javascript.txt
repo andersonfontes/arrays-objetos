@@ -1,0 +1,11 @@
+Tipos Primitivos (valor)
+string
+number
+boolean
+null 
+undefined
+
+Tipos Referência
+Arrays (vetores)
+Objetos
+Funções

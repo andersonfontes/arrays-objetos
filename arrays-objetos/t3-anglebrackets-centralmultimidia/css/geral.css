@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanuman:wght@100;300;400;700;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Hanuman', serif;
+  text-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+body {
+  background: -webkit-linear-gradient(to right, #485563, #14181d, #485563);
+  background: linear-gradient(to right, #485563, #14181d, #485563);
+  color: #dcdcdc;
+}
+
+hr {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  padding: 0.5vw;
+}
+
+iconify-icon {
+  font-size: 18vh;
+  margin-bottom: 2.5vh;
+}
+
+#chamada,
+#bluetooth,
+.clock {
+  color: #dcdcdc;
+  font-size: 25px;
+  padding: 0 0.3vw;
+}
+
+#phone-fill,
+#phone-fill2 {
+  color: #0076e3;
+}
+
+#radio,
+#radio2 {
+  color: #8a4e2d;
+}
+
+#spotify {
+  color: #1ed760;
+}
+
+#deezer {
+  color: black;
+  background: -webkit-linear-gradient(45deg,
+      #ff0000,
+      #ffed00,
+      #ff0092,
+      #c2ff00,
+      #00c7f2,
+      #c1f1fc);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+#waze {
+  width: 19vh;
+  margin-bottom: 2.5vh;
+}
+
+#apple {
+  width: 17vh;
+  margin-bottom: 2.5vh;
+}
+
+#android {
+  width: 17vh;
+  margin-bottom: 2.5vh;
+}
+
+#usb,
+#usb2 {
+  font-size: 15vh;
+  color: #01930f;
+}
+
+#bluetooth2,
+#bluetooth3 {
+  color: #0060a9;
+}
+
+#cbordo {
+  color: #e9b707;
+}
+
+#config,
+#config2 {
+  color: #99b8c4;
+}
+
+#seta {
+  color: #dcdcdc;
+  font-size: 5vh;
+}
+
+#home {
+  color: #13c2cd;
+}
+
+#folder-media {
+  color: springgreen;
+}
+
+.menuRodape {
+  width: 90%;
+  margin-top: 2.5vh;
+}
+
+.menuRodape ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  justify-items: center;
+  align-items: center;
+  margin: 4vh;
+}
+
+.menuRodape ul a {
+  text-decoration: none;
+  color: #dcdcdc;
+  height: 16vh;
+  width: 7vw;
+}
+
+.menuRodape li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 22px;
+  font-weight: 300;
+}
+
+.menuRodape #maps2,
+#phone-fill2,
+#radio2,
+#usb2,
+#bluetooth3,
+#config2,
+#home, #folder-media {
+  font-size: 10vh;
+}
+
+.toqueBtnA {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+  border-radius: 10px;
+  transition: 0.6s;
+}
+
+.toqueBtnLi {
+  transform: scale(0.8, 0.8);
+  transition: ease-in-out 0.4s;
+}
+
+.menuCompBordo {
+  width: 100%;
+}
+
+.menuCompBordo ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  justify-items: center;
+  align-items: center;
+  gap: 3.98vh;
+}
+
+.menuCompBordo ul a {
+  text-decoration: none;
+  color: #dcdcdc;
+  height: 13.5vh;
+  width: 16vw;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  background: rgb(20, 24, 29);
+  background: radial-gradient(circle, rgb(49, 58, 68) 0%, rgba(72, 85, 99, 1) 100%);
+  box-shadow: 8px 9px 11px 1px rgba(0, 0, 0, 0.25);
+  font-size: 22px;
+  font-weight: 350;
+  transition: transform 0.3s, box-shadow 0.2s;
+}
+
+.menuCompBordo ul a:active {
+  transform: translateY(6px);
+  box-shadow: 4px 4px 5px 0.5px rgba(0, 0, 0, 0.20);
+}
+
+.menuRodapeCbordo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menuRodapeCbordo ul {
+  width: 80%;
+}
